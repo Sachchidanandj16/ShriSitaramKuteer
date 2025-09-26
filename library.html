@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Library - Shri Sitaram Kuteer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                    },
+                    colors: {
+                        'brand-red': '#C53030',
+                        'brand-gold': '#D69E2E',
+                        'brand-bg': '#FFFBF0',
+                        'brand-text': '#2D3748',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            font-size: 90%;
+        }
+        .library-hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Books.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title {
+            font-family: 'Lora', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-bg text-brand-text dark:bg-gray-900 dark:text-gray-200 font-sans transition-colors duration-300">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md dark:bg-gray-800/80 sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <span class="font-bold text-2xl bg-brand-red text-brand-gold rounded-full flex items-center justify-center w-12 h-12">SSK®</span>
+                <span class="text-xl font-bold text-brand-red font-serif">Shri Sitaram Kuteer</span>
+            </a>
+            <div>
+                <a href="index.html" class="text-gray-600 dark:text-gray-300 hover:text-brand-red dark:hover:text-brand-gold transition-colors font-semibold">&larr; Back to Main Site</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Library Hero Section -->
+        <section id="home" class="library-hero-bg h-[50vh] text-white flex items-center justify-center">
+            <div class="text-center p-12">
+                <h1 class="text-5xl md:text-7xl font-extrabold section-title mb-4">The Spiritual Library</h1>
+                <p class="text-lg md:text-xl max-w-3xl mb-8">A tranquil space for study, reflection, and the pursuit of divine knowledge.</p>
+            </div>
+        </section>
+
+        <!-- About the Library Section -->
+        <section id="about-library" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold section-title text-brand-red mb-6">A Treasury of Sacred Texts</h2>
+                <p class="max-w-3xl mx-auto text-lg text-brand-text dark:text-gray-300 leading-relaxed">
+                    Our reading gallery offers a serene and welcoming environment for devotees and seekers to immerse themselves in a vast collection of sacred texts and devotional literature. It is a place to deepen one's understanding of Sanatana Dharma and connect with the timeless wisdom of the saints and sages.
+                </p>
+            </div>
+        </section>
+
+        <!-- Book Collection Section -->
+        <section id="collection" class="py-20 bg-white dark:bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold section-title text-brand-red mb-12 text-center">Our Collection</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Book Card 1 -->
+                    <div class="bg-brand-bg dark:bg-gray-700 rounded-xl shadow-lg text-center p-6">
+                        <img src="https://hindunidhi.com/wp-content/uploads/2025/02/vishnu-sahasranamam-gita-press.webp" alt="Vishnu SahastraNama" class="w-full h-64 object-cover rounded-md mx-auto mb-4">
+                        <h3 class="text-xl font-semibold section-title text-brand-red dark:text-brand-gold"><a href="VishnuSahastraNama.pdf" target="_blank" rel="noopener noreferrer">Vishnu SahastraNama</a></h3>
+                        <p class="text-sm text-brand-text dark:text-gray-300 mt-2">The Vishnu Sahastranama is a Sanskrit hymn that contains a list of 1,000 names of Lord Vishnu.</p>
+                    </div>
+                    <!-- Book Card 2 -->
+                    <div class="bg-brand-bg dark:bg-gray-700 rounded-xl shadow-lg text-center p-6">
+                        <img src="https://placehold.co/300x400/FFFBEB/C53030?text=Epics" alt="Epics & Puranas" class="w-full h-64 object-cover rounded-md mx-auto mb-4">
+                        <h3 class="text-xl font-semibold section-title text-brand-red dark:text-brand-gold">Epics & Puranas</h3>
+                        <p class="text-sm text-brand-text dark:text-gray-300 mt-2">Complete editions of the Ramayana, Mahabharata, and key Puranas.</p>
+                    </div>
+                    <!-- Book Card 3 -->
+                    <div class="bg-brand-bg dark:bg-gray-700 rounded-xl shadow-lg text-center p-6">
+                        <img src="https://placehold.co/300x400/FFFBEB/C53030?text=Gita" alt="Bhagavad Gita" class="w-full h-64 object-cover rounded-md mx-auto mb-4">
+                        <h3 class="text-xl font-semibold section-title text-brand-red dark:text-brand-gold">Gita & Commentaries</h3>
+                        <p class="text-sm text-brand-text dark:text-gray-300 mt-2">Various translations and detailed commentaries on the Bhagavad Gita.</p>
+                    </div>
+                    <!-- Book Card 4 -->
+                    <div class="bg-brand-bg dark:bg-gray-700 rounded-xl shadow-lg text-center p-6">
+                        <img src="https://placehold.co/300x400/FFFBEB/C53030?text=Saints" alt="Lives of Saints" class="w-full h-64 object-cover rounded-md mx-auto mb-4">
+                        <h3 class="text-xl font-semibold section-title text-brand-red dark:text-brand-gold">Biographies of Saints</h3>
+                        <p class="text-sm text-brand-text dark:text-gray-300 mt-2">Inspiring life stories and teachings of great spiritual masters and devotees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Visit Us Section -->
+        <section id="visit" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold section-title text-brand-red mb-6">Visit the Library</h2>
+                <p class="max-w-3xl mx-auto text-lg text-brand-text dark:text-gray-300 leading-relaxed mb-8">
+                    The library is open to all residents and visiting devotees. Please maintain silence to preserve the sanctity of the space.
+                </p>
+                <div class="inline-block bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg border-t-4 border-brand-gold">
+                    <h3 class="text-2xl font-semibold section-title text-brand-red dark:text-brand-gold mb-4">Library Hours</h3>
+                    <p class="text-lg text-brand-text dark:text-gray-300"><strong>Morning:</strong> 9:00 AM - 12:00 PM</p>
+                    <p class="text-lg text-brand-text dark:text-gray-300"><strong>Evening:</strong> 4:00 PM - 7:00 PM</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-red text-brand-bg">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Thakur Shri Hanuman Ji Maharaj Govind Bag Samiti Trust. All Rights Reserved.</p>
+            <p class="text-sm mt-2 opacity-80">Designed with devotion.</p>
+        </div>
+    </footer>
+
+    <script>
+        // A simple script for theme toggling if needed on this page too.
+        // For now, it respects the setting from the main page via localStorage.
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</body>
+</html>
